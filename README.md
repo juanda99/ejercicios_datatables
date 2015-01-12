@@ -3,9 +3,9 @@
 
 1. Actualiza el ejercicio1.html para que la tabla se vea mediante el plugin de jquery.  Comprueba que mediante el plugin la tabla dispone de: paginación, filtrado y ordenamiento por columnas.
 Pasos orientativos:
-- Como en cualquier otro plugin jquery, cargar jquery antes que el plugin
-- Cargar el plugin ( jquery.dataTables.js).
-- Asociar el plugin de jquery a la tabla en cuestión, según la documentación de datatables.
+    - Como en cualquier otro plugin jquery, cargar jquery antes que el plugin
+    - Cargar el plugin ( jquery.dataTables.js).
+    - Asociar el plugin de jquery a la tabla en cuestión, según la documentación de datatables.
 
 2. Personaliza la tabla del ejercicio2, eliminando el filtrado y la paginación, mediante el uso de variables en la inicialización del objeto datatables.
 
