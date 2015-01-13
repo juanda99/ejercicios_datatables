@@ -1,0 +1,7 @@
+{
+  "name": "ejercicios-datatables",
+  "private": true,
+  "dependencies": {
+    "datatables": "~1.10.4"
+  }
+}
