@@ -456,7 +456,10 @@
     <!-- endbuild -->
     <script>
     $(document).ready(function() {
-        $('#miTabla').DataTable();
+        $('#miTabla').DataTable({
+            "paging": false,
+            "filter": false
+        });
     });
     </script>
 </body>
