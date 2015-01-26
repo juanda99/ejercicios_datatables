@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "datatables": "~1.10.4",
-    "jquery": "1.11.1"
+    "jquery": "1.11.1",
+    "bootstrap": "3.2.0"
   }
 }
