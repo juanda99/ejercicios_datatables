@@ -10,18 +10,21 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
+
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/dataTables.bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
 
 <body>
-
-    <table id="miTabla">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+    <table id="miTabla" class="table">
         <thead>
             <tr>
                 <th>Rendering engine</th>
@@ -444,7 +447,9 @@
         </tfoot>
     </table>
 
-
+</div>
+</div>
+</div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -453,33 +458,11 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-    <script>
-    $(document).ready(function() {
-        $('#miTabla').DataTable({
-            /* "paging": false,
-             "filter": false,*/
-            "order": [
-                [0, "asc"]
-            ],
-            "columnDefs": [
-            {
-                "targets": [2],
-                "visible": false,
-            },
-            {
-                "targets": [3],
-                "searchable": false,
-                "visible": false
-            }
-            ]
+    <!-- build:js({app,.tmp}) scripts/ejercicio6.js -->
+    <script src="scripts/dataTables.bootstrap.js"></script>
+    <script src="scripts/ejercicio6.js"></script>
 
-        });
-    });
-    </script>
+    <!-- endbuild -->
 </body>
 
 </html>
-<!-- Mediante columnDefs podemos definir el comportamiento de alguna de las columnas de la tabla, no hace falta definirlas todas. Utilizamos target para referirnos a las propiedades que van a tener una o varias columnas-->
